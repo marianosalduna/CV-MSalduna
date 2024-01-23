@@ -16,7 +16,6 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    /* When we click on each nav__link, we remove the show-menu class */
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -43,7 +42,6 @@ window.addEventListener('scroll', scrollActive)
 /* Mostrar Volver Arriba */
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
-    /* When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class */
     if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
@@ -91,7 +89,7 @@ let resumeButton = document.getElementById('resume-button')
 /* Opciones Html2pdf */
 let opt = {
   margin:       0,
-  filename:     'Muhammad-Essa-Resume.pdf',
+  filename:     'MarianoSaldunaCV.pdf',
   image:        { type: 'jpeg', quality: 0.98 },
   html2canvas:  { scale: 4 },
   jsPDF:        { format: 'a4', orientation: 'portrait' }
