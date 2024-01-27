@@ -333,12 +333,12 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-/* Show menu */
+/* Menu */
 .show-menu{
   bottom: var(--header-height);
 }
 
-/* Active menu link */
+/* Menu link */
 .active-link{
   color: var(--title-color);
 }
